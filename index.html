@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sushies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Оперативная служба доставки вкуснейших блюд японской кухни в г. Мосвка">
+  <link rel="stylesheet" href="dist/css/main.css">
+  <link rel="shortcut icon" href="dist/img/icon.png">
+  <script src="https://kit.fontawesome.com/7cf6662503.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="header__top header__top_fixed">
+      <div class="wrapper">
+        <div class="header__content">
+          <a href="/" class="logo header__logo">
+            <img src="dist/img/logo.png" alt="" class="logo__img">
+            <div class="logo__inf">
+              <p class="logo__text">Sushi</p>
+              <span class="logo__description">Delivery</span>
+            </div>
+          </a>
+          <nav class="nav-menu header__nav-menu">
+            <div class="menu-toggle"></div>
+            <ul class="nav-menu__list">
+              <li class="nav-menu__item">
+                <a href="#roll" class="nav-menu__link">Роллы</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#sushi" class="nav-menu__link">Суши</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#pizza" class="nav-menu__link">Пицца</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#pasta" class="nav-menu__link">Лапша</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#salad" class="nav-menu__link">Салаты</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="tel: +7123456789" class="header__phone">+7 123 456 789</a>
+          <div class="corsine-panel header__corsine-panel">
+            <a href="corsine.html" type="text" class="btn corsine-btn header__btn"><i
+                class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__center">
+      <div class="header__inf">
+        <h1 class="main-title header__title">Доставка японской кухни и не только</h1>
+        <h2 class="title2 header__title2">Оперативная служба доставки вкуснейших блюд японской кухни в г. Москва</h2>
+        <div class="good-nav">
+          <a href="#roll" class="good-nav__item">
+            <div class="good-nav__bg">
+              <img src="dist/img/header/11.jpg" alt="" class="good-nav__img">
+            </div>
+            <p class="good-nav__name">Роллы</p>
+            <div class="bg-black good-nav__bg-black"></div>
+          </a>
+          <a href="#sushi" class="good-nav__item">
+            <div class="good-nav__bg">
+              <img src="dist/img/header/1.jpg" alt="" class="good-nav__img">
+            </div>
+            <p class="good-nav__name">Суши</p>
+            <div class="bg-black good-nav__bg-black"></div>
+          </a>
+          <a href="#pizza" class="good-nav__item">
+            <div class="good-nav__bg">
+              <img src="dist/img/header/13.jpg" alt="" class="good-nav__img">
+            </div>
+            <p class="good-nav__name">Пицца</p>
+            <div class="bg-black good-nav__bg-black"></div>
+          </a>
+          <a href="#pasta" class="good-nav__item">
+            <div class="good-nav__bg">
+              <img src="dist/img/header/14.jpg" alt="" class="good-nav__img">
+            </div>
+            <p class="good-nav__name">Лапша</p>
+            <div class="bg-black good-nav__bg-black"></div>
+          </a>
+          <a href="#salad" class="good-nav__item">
+            <div class="good-nav__bg">
+              <img src="dist/img/header/15.jpg" alt="" class="good-nav__img">
+            </div>
+            <p class="good-nav__name">Салаты</p>
+            <div class="bg-black good-nav__bg-black"></div>
+          </a>
+        </div>
+      </div>
+      <div class="bg-black"></div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="goods">
+      <div class="wrapper">
+        <h2 class="title2 goods__title2" id="roll">Роллы</h2>
+        <div class="goods__items">
+          <div class="goods__item product-item" data-id="1">
+            <div class="goods__bg">
+              <img src="dist/img/goods/1.jpg" alt="Калифорния тунец" class="goods__img">
+            </div>
+            <h3 class="goods__name">Калифорния тунец</h3>
+            <p class="goods__struct">Рис, нори, огурец, сыр, авокадо, тунец, фирменный соус, кунжут, тобико</p>
+            <div class="goods__buy">
+              <p class="goods__price">290 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="1">
+            </div>
+          </div>
+          <div class="goods__item product-item" data-id="2">
+            <div class="goods__bg">
+              <img src="dist/img/goods/2.jpg" alt="Калифорния угорь" class="goods__img">
+            </div>
+            <h3 class="goods__name">Калифорния угорь</h3>
+            <p class="goods__struct">Рис, нори, огурец, майонез, авокадо, угорь, тобико</p>
+            <div class="goods__buy">
+              <p class="goods__price">270 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="2">
+            </div>
+          </div>
+          <div class="goods__item product-item" data-id="4">
+            <div class="goods__bg">
+              <img src="dist/img/goods/4.jpg" alt="Филадельфия" class="goods__img">
+            </div>
+            <h3 class="goods__name">Филадельфия</h3>
+            <p class="goods__struct">Рис, нори, сыр "Филадельфия", огурец, лосось</p>
+            <div class="goods__buy">
+              <p class="goods__price">250 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="4">
+            </div>
+          </div>
+          <div class="goods__item product-item" data-id="5">
+            <div class="goods__bg">
+              <img src="dist/img/goods/5.jpg" alt="Сакура" class="goods__img">
+            </div>
+            <h3 class="goods__name">Сакура</h3>
+            <p class="goods__struct">Рис, лист тофу, сыр "Филадельфия", угорь</p>
+            <div class="goods__buy">
+              <p class="goods__price">270 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="5">
+            </div>
+          </div>
+          <div class="goods__item product-item" data-id="6">
+            <div class="goods__bg">
+              <img src="dist/img/goods/6.jpg" alt="Пирамида" class="goods__img">
+            </div>
+            <h3 class="goods__name">Пирамида</h3>
+            <p class="goods__struct">Рис, нори, сыр "Филадельфия", омлет, тобико, угорь, лосось</p>
+            <div class="goods__buy">
+              <p class="goods__price">270 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="6">
+            </div>
+          </div>
+        </div>
+        <h2 class="title2 goods__title2" id="sushi">Суши</h2>
+        <div class="goods__items">
+          <div class="goods__item product-item" data-id="7">
+            <div class="goods__bg">
+              <img src="dist/img/goods/7.jpg" alt="Лосось" class="goods__img">
+            </div>
+            <h3 class="goods__name">Лосось</h3>
+            <p class="goods__struct">рис, лосось</p>
+            <div class="goods__buy">
+              <p class="goods__price">50 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="7">
+            </div>
+          </div>
+          <div class="goods__item product-item" data-id="8">
+            <div class="goods__bg">
+              <img src="dist/img/goods/8.jpg" alt="Копченный лосось" class="goods__img">
+            </div>
+            <h3 class="goods__name">Копченный лосось</h3>
+            <p class="goods__struct">рис, копченый лосось</p>
+            <div class="goods__buy">
+              <p class="goods__price">60 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="8">
+            </div>
+          </div>
+          <div class="goods__item product-item" data-id="9">
+            <div class="goods__bg">
+              <img src="dist/img/goods/9.jpg" alt="Креветка" class="goods__img">
+            </div>
+            <h3 class="goods__name">Креветка</h3>
+            <p class="goods__struct">рис, креветка</p>
+            <div class="goods__buy">
+              <p class="goods__price">60 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="9">
+            </div>
+          </div>
+          <div class="goods__item product-item" data-id="10">
+            <div class="goods__bg">
+              <img src="dist/img/goods/10.jpg" alt="Спайси лосось" class="goods__img">
+            </div>
+            <h3 class="goods__name">Спайси лосось</h3>
+            <p class="goods__struct">нори, рис, спайси соус, лосось</p>
+            <div class="goods__buy">
+              <p class="goods__price">50 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="10">
+            </div>
+          </div>
+          <div class="goods__item product-item" data-id="11">
+            <div class="goods__bg">
+              <img src="dist/img/goods/11.jpg" alt="Спайси угорь" class="goods__img">
+            </div>
+            <h3 class="goods__name">Спайси угорь</h3>
+            <p class="goods__struct">нори, рис, спайси соус, угорь</p>
+            <div class="goods__buy">
+              <p class="goods__price">50 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="11">
+            </div>
+          </div>
+          <div class="goods__item product-item" data-id="12">
+            <div class="goods__bg">
+              <img src="dist/img/goods/12.jpg" alt="Спайси мидии" class="goods__img">
+            </div>
+            <h3 class="goods__name">Спайси мидии</h3>
+            <p class="goods__struct">нори, рис, спайси соус, мидии</p>
+            <div class="goods__buy">
+              <p class="goods__price">50 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="12">
+            </div>
+          </div>
+          <div class="goods__item product-item" data-id="13">
+            <div class="goods__bg">
+              <img src="dist/img/goods/13.jpg" alt="Дункан икура" class="goods__img">
+            </div>
+            <h3 class="goods__name">Дункан икура</h3>
+            <p class="goods__struct">нори, рис, икра лосося</p>
+            <div class="goods__buy">
+              <p class="goods__price">70 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="13">
+            </div>
+          </div>
+          <div class="goods__item product-item" data-id="14">
+            <div class="goods__bg">
+              <img src="dist/img/goods/14.jpg" alt="Дункан чука" class="goods__img">
+            </div>
+            <h3 class="goods__name">Дункан чука</h3>
+            <p class="goods__struct">нори, рис, чука салат</p>
+            <div class="goods__buy">
+              <p class="goods__price">35 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="14">
+            </div>
+          </div>
+        </div>
+        <h2 class="title2 goods__title2" id="pizza">Пицца</h2>
+        <div class="goods__items">
+          <div class="goods__item product-item" data-id="15">
+            <div class="goods__bg">
+              <img src="dist/img/goods/15.jpg" alt="Пицца Пепперони" class="goods__img">
+            </div>
+            <h3 class="goods__name">Пицца Пепперони</h3>
+            <p class="goods__struct">сыр моцарелла, соус, салями пепперони, томаты черри, чеснок, острый перец</p>
+            <div class="goods__buy">
+              <p class="goods__price">380 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="15">
+            </div>
+          </div>
+          <div class="goods__item product-item" data-id="16">
+            <div class="goods__bg">
+              <img src="dist/img/goods/16.jpg" alt="Пицца Карбонара" class="goods__img">
+            </div>
+            <h3 class="goods__name">Пицца Карбонара</h3>
+            <p class="goods__struct">Соус томатный, сыр моцарелла, бекон, ветчина, колбаски баварские, сыр пармезан,
+              яйцо куриное</p>
+            <div class="goods__buy">
+              <p class="goods__price">370 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="16">
+            </div>
+          </div>
+          <div class="goods__item product-item" data-id="17">
+            <div class="goods__bg">
+              <img src="dist/img/goods/17.jpg" alt="Пицца Маргарита" class="goods__img">
+            </div>
+            <h3 class="goods__name">Пицца Маргарита</h3>
+            <p class="goods__struct">сыр моцарелла, соус, базилик</p>
+            <div class="goods__buy">
+              <p class="goods__price">240 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="17">
+            </div>
+          </div>
+          <div class="goods__item product-item" data-id="18">
+            <div class="goods__bg">
+              <img src="dist/img/goods/18.jpg" alt="Пицца Цезарь" class="goods__img">
+            </div>
+            <h3 class="goods__name">Пицца Цезарь</h3>
+            <p class="goods__struct">сыр моцарелла, соус, куриное филе, томаты черри, капуста пекинская,соус цезарь,сыр
+              пармезан.</p>
+            <div class="goods__buy">
+              <p class="goods__price">390 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="18">
+            </div>
+          </div>
+        </div>
+        <h2 class="title2 goods__title2" id="pasta">Лапша</h2>
+        <div class="goods__items">
+          <div class="goods__item product-item" data-id="19">
+            <div class="goods__bg">
+              <img src="dist/img/goods/19.jpg" alt="Бобовая лапша" class="goods__img">
+            </div>
+            <h3 class="goods__name">Бобовая лапша</h3>
+            <p class="goods__struct">Лапша бобовая, овощной микс, морепродукты, тигровая креветка, терияки соус,
+              фирменный соус </p>
+            <div class="goods__buy">
+              <p class="goods__price">240 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="19">
+            </div>
+          </div>
+          <div class="goods__item product-item" data-id="20">
+            <div class="goods__bg">
+              <img src="dist/img/goods/20.jpg" alt="Лапша Карбонара" class="goods__img">
+            </div>
+            <h3 class="goods__name">Лапша Карбонара</h3>
+            <p class="goods__struct">Лапша удон, сливочно-чесночный соус, бекон, яичный желток, сыр пармезан</p>
+            <div class="goods__buy">
+              <p class="goods__price">240 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="20">
+            </div>
+          </div>
+          <div class="goods__item product-item" data-id="21">
+            <div class="goods__bg">
+              <img src="dist/img/goods/21.jpg" alt="Набор Овощной" class="goods__img">
+            </div>
+            <h3 class="goods__name">Набор Овощной</h3>
+            <p class="goods__struct">Лапша фунчоза, овощи</p>
+            <div class="goods__buy">
+              <p class="goods__price">120 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="21">
+            </div>
+          </div>
+          <div class="goods__item product-item" data-id="22">
+            <div class="goods__bg">
+              <img src="dist/img/goods/22.jpg" alt="Набор яичный" class="goods__img">
+            </div>
+            <h3 class="goods__name">Набор яичный</h3>
+            <p class="goods__struct">Лапша яичная, курица, сливочно-чесночный соус</p>
+            <div class="goods__buy">
+              <p class="goods__price">220 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="22">
+            </div>
+          </div>
+        </div>
+        <h2 class="title2 goods__title2" id="salad">Салаты</h2>
+        <div class="goods__items">
+          <div class="goods__item product-item" data-id="23">
+            <div class="goods__bg">
+              <img src="dist/img/goods/23.jpg" alt="Креветочный с авокадо" class="goods__img">
+            </div>
+            <h3 class="goods__name">Креветочный с авокадо</h3>
+            <p class="goods__struct">коктейльные креветки, помидоры, огурцы, авокадо, тобико,японский майонез.</p>
+            <div class="goods__buy">
+              <p class="goods__price">250 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="23">
+            </div>
+          </div>
+          <div class="goods__item product-item" data-id="24">
+            <div class="goods__bg">
+              <img src="dist/img/goods/24.jpg" alt="Греческий" class="goods__img">
+            </div>
+            <h3 class="goods__name">Греческий</h3>
+            <p class="goods__struct">капуста пекинская, помидоры, огурцы, перец болгарский, сыр греческий, маслины,
+              зелень.</p>
+            <div class="goods__buy">
+              <p class="goods__price">180 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="24">
+            </div>
+          </div>
+          <div class="goods__item product-item" data-id="25">
+            <div class="goods__bg">
+              <img src="dist/img/goods/25.jpg" alt="Цезарь с креветками" class="goods__img">
+            </div>
+            <h3 class="goods__name">Цезарь с креветками</h3>
+            <p class="goods__struct">капуста пекинская ,соус цезарь, чесночные гренки, томаты черри, яйцо перепелиное,
+              сыр пармезан, тигровые креветки.</p>
+            <div class="goods__buy">
+              <p class="goods__price">280 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="25">
+            </div>
+          </div>
+          <div class="goods__item product-item" data-id="26">
+            <div class="goods__bg">
+              <img src="dist/img/goods/26.jpg" alt="Цезарь с курицей" class="goods__img">
+            </div>
+            <h3 class="goods__name">Цезарь с курицей</h3>
+            <p class="goods__struct">капуста пекинская ,соус цезарь, чесночные гренки, томаты черри, яйцо перепелиное,
+              сыр пармезан, куриное филе.</p>
+            <div class="goods__buy">
+              <p class="goods__price">250 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="26">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__content">
+        <a href="/" class="logo logo_white">
+          <img src="dist/img/logo.png" alt="" class="logo__img">
+          <div class="logo__inf">
+            <p class="logo__text">Sushi</p>
+            <span class="logo__description">Delivery</span>
+          </div>
+        </a>
+        <div class="footer-menu">
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item">
+              <a href="#roll" class="link footer-menu__link">Роллы</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#sushi" class="link footer-menu__link">Суши</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#pizza" class="link footer-menu__link">Пицца</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#pasta" class="link footer-menu__link">Лапша</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#salad" class="link footer-menu__link">Салаты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="messages"></div>
+  <a href="#header" class="up up_hide" title="Наверх">
+    <div class="up__arrow"></div>
+  </a>
+  <script src="dist/js/common.js"></script>
+</body>
+</html>
