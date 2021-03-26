@@ -8,7 +8,6 @@
   <meta name="description" content="Оперативная служба доставки вкуснейших блюд японской кухни в г. Москва">
   <link rel="shortcut icon" href="dist/img/icon.png">
   <!-- Critical CSS -->
-  <link rel="stylesheet" href="dist/css/main.css">
 </head>
 
 <body>
@@ -67,7 +66,7 @@
     <div class="wrapper">
       <div class="footer__content">
         <a href="/sushi" class="logo logo_white">
-          <img src="dist/img/logo.png" alt="" class="logo__img">
+          <img src="dist/img/logo.png" alt="" class="logo__img" loading="lazy">
           <div class="logo__inf">
             <p class="logo__text">Sushi</p>
             <span class="logo__description">Delivery</span>
@@ -99,6 +98,16 @@
   <a href="#header" class="up up_hide" title="Наверх">
     <div class="up__arrow"></div>
   </a>
+  <script>
+    function loadStyle(url) {
+        let link = document.createElement('link');
+        link.href = url;
+        link.rel = 'stylesheet';
+        document.body.appendChild(link);
+    }
+
+    loadStyle('dist/css/main.css');
+  </script>
   <script src="dist/js/common.js"></script>
 </body>
 
