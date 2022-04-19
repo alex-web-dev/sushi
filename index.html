@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sushi Delivery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Оперативная служба доставки вкуснейших блюд японской кухни в г. Москва">
+  <link rel="shortcut icon" href="dist/img/icon.png">
+  <link rel="stylesheet" href="dist/css/main.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="header__top">
+      <div class="wrapper">
+        <div class="header__content">
+          <a href="/sushi" class="logo header__logo">
+            <picture>
+              <source srcset="dist/img/logo.webp" type="image/webp">
+              <img src="dist/img/logo.png" alt="SD" class="logo__img" width="45" height="41">
+            </picture>
+            <div class="logo__inf">
+              <p class="logo__text">Sushi</p>
+              <span class="logo__description">Delivery</span>
+            </div>
+          </a>
+          <nav class="nav-menu header__nav-menu">
+            <div class="menu-toggle"></div>
+            <ul class="nav-menu__list">
+              <li class="nav-menu__item">
+                <a href="#roll" class="nav-menu__link">Роллы</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#sushi" class="nav-menu__link">Суши</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#pizza" class="nav-menu__link">Пицца</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#pasta" class="nav-menu__link">Лапша</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#salad" class="nav-menu__link">Салаты</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="tel: +7123456789" class="header__phone">+7 123 456 789</a>
+          <div class="corsine-panel header__corsine-panel">
+            <a href="corsine.html" type="text" class="btn corsine-btn header__btn">
+              <svg width="24" height="24" viewBox="0 0 17 17">
+                  <path d="M2.75 12.5c-0.965 0-1.75 0.785-1.75 1.75s0.785 1.75 1.75 1.75 1.75-0.785 1.75-1.75-0.785-1.75-1.75-1.75zM2.75 15c-0.414 0-0.75-0.337-0.75-0.75s0.336-0.75 0.75-0.75 0.75 0.337 0.75 0.75-0.336 0.75-0.75 0.75zM11.25 12.5c-0.965 0-1.75 0.785-1.75 1.75s0.785 1.75 1.75 1.75 1.75-0.785 1.75-1.75-0.785-1.75-1.75-1.75zM11.25 15c-0.414 0-0.75-0.337-0.75-0.75s0.336-0.75 0.75-0.75 0.75 0.337 0.75 0.75-0.336 0.75-0.75 0.75zM13.371 2l-0.302 2h-13.143l1.118 8.036h11.913l1.038-7.463 0.236-1.573h2.769v-1h-3.629zM12.926 5l-0.139 1h-11.574l-0.139-1h11.852zM1.914 11.036l-0.561-4.036h11.295l-0.561 4.036h-10.173z" fill="#fff" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__center">
+      <div class="header__inf">
+        <h1 class="main-title header__title wow fadeInUp" data-wow-delay=".3s">Быстрая доставка японской кухни</h1>
+        <h2 class="title2 header__title2 wow fadeInUp" data-wow-delay=".3s">Оперативная служба доставки вкуснейших блюд японской кухни в г. Москва</h2>
+        <div class="good-nav">
+          <a href="#roll" class="good-nav__item">
+            <div class="good-nav__bg wow fadeInUp" data-wow-delay=".7s" data-wow-offset="0">              
+              <picture>
+                <source srcset="dist/img/header/1.webp" type="image/webp">
+                <img src="dist/img/header/1.jpg" alt="Роллы" class="good-nav__img" width="800" height="500" loading="lazy">
+              </picture>
+            </div>
+            <p class="good-nav__name">Роллы</p>
+          </a>
+          <a href="#sushi" class="good-nav__item">
+            <div class="good-nav__bg wow fadeInUp" data-wow-delay=".85s" data-wow-offset="0">              
+              <picture>
+                <source srcset="dist/img/header/2.webp" type="image/webp">
+                <img src="dist/img/header/2.jpg" alt="Суши" class="good-nav__img" width="667" height="500" loading="lazy">
+              </picture>
+            </div>
+            <p class="good-nav__name">Суши</p>
+          </a>
+          <a href="#pizza" class="good-nav__item">
+            <div class="good-nav__bg wow fadeInUp" data-wow-delay="1s" data-wow-offset="0">              
+              <picture>
+                <source srcset="dist/img/header/3.webp" type="image/webp">
+                <img src="dist/img/header/3.jpg" alt="Пицца" class="good-nav__img" width="751" height="500" loading="lazy">
+              </picture>
+            </div>
+            <p class="good-nav__name">Пицца</p>
+          </a>
+          <a href="#pasta" class="good-nav__item">
+            <div class="good-nav__bg wow fadeInUp" data-wow-delay="1.15s" data-wow-offset="0">              
+              <picture>
+                <source srcset="dist/img/header/4.webp" type="image/webp">
+                <img src="dist/img/header/4.jpg" alt="Лапша" class="good-nav__img" width="751" height="500" loading="lazy">
+              </picture>
+            </div>
+            <p class="good-nav__name">Лапша</p>
+          </a>
+          <a href="#salad" class="good-nav__item">
+            <div class="good-nav__bg wow fadeInUp" data-wow-delay="1.3s" data-wow-offset="0">              
+              <picture>
+                <source srcset="dist/img/header/5.webp" type="image/webp">
+                <img src="dist/img/header/5.jpg" alt="Салаты" class="good-nav__img" width="751" height="500" loading="lazy">
+              </picture>
+            </div>
+            <p class="good-nav__name">Салаты</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="goods">
+      <div class="wrapper">
+        <h2 class="title2 goods__title2" id="roll">Роллы</h2>
+        <div class="goods__items">
+          <div class="goods__item product-item wow fadeInUp" data-id="1" data-wow-offset="200">
+            <div class="goods__bg">
+              <picture>
+                <source srcset="dist/img/goods/1.webp" type="image/webp">
+                <img src="dist/img/goods/1.jpg" alt="Калифорния тунец" class="goods__img" width="290" height="200" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="goods__name">Калифорния тунец</h3>
+            <p class="goods__struct">Рис, нори, огурец, сыр, авокадо, тунец, фирменный соус, кунжут, тобико</p>
+            <div class="goods__buy">
+              <p class="goods__price">290 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="1">
+            </div>
+          </div>
+          <div class="goods__item product-item wow fadeInUp" data-id="2" data-wow-offset="200">
+            <div class="goods__bg">
+              <picture>
+                <source srcset="dist/img/goods/2.webp" type="image/webp">
+                <img src="dist/img/goods/2.jpg" alt="Калифорния угорь" class="goods__img" width="290" height="193" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="goods__name">Калифорния угорь</h3>
+            <p class="goods__struct">Рис, нори, огурец, майонез, авокадо, угорь, тобико</p>
+            <div class="goods__buy">
+              <p class="goods__price">270 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="2">
+            </div>
+          </div>
+          <div class="goods__item product-item wow fadeInUp" data-id="4" data-wow-offset="200">
+            <div class="goods__bg">
+              <picture>
+                <source srcset="dist/img/goods/4.webp" type="image/webp">
+                <img src="dist/img/goods/4.jpg" alt="Филадельфия" class="goods__img" width="290" height="193" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="goods__name">Филадельфия</h3>
+            <p class="goods__struct">Рис, нори, сыр "Филадельфия", огурец, лосось</p>
+            <div class="goods__buy">
+              <p class="goods__price">250 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="4">
+            </div>
+          </div>
+          <div class="goods__item product-item wow fadeInUp" data-id="5" data-wow-offset="200">
+            <div class="goods__bg">
+              <picture>
+                <source srcset="dist/img/goods/5.webp" type="image/webp">
+                <img src="dist/img/goods/5.jpg" alt="Сакура" class="goods__img" width="320" height="213" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="goods__name">Сакура</h3>
+            <p class="goods__struct">Рис, лист тофу, сыр "Филадельфия", угорь</p>
+            <div class="goods__buy">
+              <p class="goods__price">270 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="5">
+            </div>
+          </div>
+          <div class="goods__item product-item wow fadeInUp" data-id="6" data-wow-offset="200">
+            <div class="goods__bg">
+              <picture>
+                <source srcset="dist/img/goods/6.webp" type="image/webp">
+                <img src="dist/img/goods/6.jpg" alt="Пирамида" class="goods__img" width="290" height="224" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="goods__name">Пирамида</h3>
+            <p class="goods__struct">Рис, нори, сыр "Филадельфия", омлет, тобико, угорь, лосось</p>
+            <div class="goods__buy">
+              <p class="goods__price">270 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="6">
+            </div>
+          </div>
+        </div>
+        <h2 class="title2 goods__title2" id="sushi">Суши</h2>
+        <div class="goods__items">
+          <div class="goods__item product-item wow fadeInUp" data-id="7" data-wow-offset="200">
+            <div class="goods__bg">
+              <picture>
+                <source srcset="dist/img/goods/7.webp" type="image/webp">
+                <img src="dist/img/goods/7.jpg" alt="Лосось" class="goods__img" width="290" height="225" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="goods__name">Лосось</h3>
+            <p class="goods__struct">рис, лосось</p>
+            <div class="goods__buy">
+              <p class="goods__price">50 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="7">
+            </div>
+          </div>
+          <div class="goods__item product-item wow fadeInUp" data-id="8" data-wow-offset="200">
+            <div class="goods__bg">
+              <picture>
+                <source srcset="dist/img/goods/8.webp" type="image/webp">
+                <img src="dist/img/goods/8.jpg" alt="Копченный лосось" class="goods__img" width="290" height="224" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="goods__name">Копченный лосось</h3>
+            <p class="goods__struct">рис, копченый лосось</p>
+            <div class="goods__buy">
+              <p class="goods__price">60 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="8">
+            </div>
+          </div>
+          <div class="goods__item product-item wow fadeInUp" data-id="9" data-wow-offset="200">
+            <div class="goods__bg">
+              <picture>
+                <source srcset="dist/img/goods/9.webp" type="image/webp">
+                <img src="dist/img/goods/9.jpg" alt="Креветка" class="goods__img" width="290" height="188" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="goods__name">Креветка</h3>
+            <p class="goods__struct">рис, креветка</p>
+            <div class="goods__buy">
+              <p class="goods__price">60 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="9">
+            </div>
+          </div>
+          <div class="goods__item product-item wow fadeInUp" data-id="10" data-wow-offset="200">
+            <div class="goods__bg">
+              <picture>
+                <source srcset="dist/img/goods/10.webp" type="image/webp">
+                <img src="dist/img/goods/10.jpg" alt="Спайси лосось" class="goods__img" width="290" height="193" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="goods__name">Спайси лосось</h3>
+            <p class="goods__struct">нори, рис, спайси соус, лосось</p>
+            <div class="goods__buy">
+              <p class="goods__price">50 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="10">
+            </div>
+          </div>
+          <div class="goods__item product-item wow fadeInUp" data-id="11" data-wow-offset="200">
+            <div class="goods__bg">
+              <picture>
+                <source srcset="dist/img/goods/11.webp" type="image/webp">
+                <img src="dist/img/goods/11.jpg" alt="Спайси угорь" class="goods__img" width="290" height="193" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="goods__name">Спайси угорь</h3>
+            <p class="goods__struct">нори, рис, спайси соус, угорь</p>
+            <div class="goods__buy">
+              <p class="goods__price">50 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="11">
+            </div>
+          </div>
+          <div class="goods__item product-item wow fadeInUp" data-id="12" data-wow-offset="200">
+            <div class="goods__bg">
+              <picture>
+                <source srcset="dist/img/goods/12.webp" type="image/webp">
+                <img src="dist/img/goods/12.jpg" alt="Спайси мидии" class="goods__img" width="290" height="218" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="goods__name">Спайси мидии</h3>
+            <p class="goods__struct">нори, рис, спайси соус, мидии</p>
+            <div class="goods__buy">
+              <p class="goods__price">50 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="12">
+            </div>
+          </div>
+          <div class="goods__item product-item wow fadeInUp" data-id="13" data-wow-offset="200">
+            <div class="goods__bg">
+              <picture>
+                <source srcset="dist/img/goods/13.webp" type="image/webp">
+                <img src="dist/img/goods/13.jpg" alt="Дункан икура" class="goods__img" width="290" height="218" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="goods__name">Дункан икура</h3>
+            <p class="goods__struct">нори, рис, икра лосося</p>
+            <div class="goods__buy">
+              <p class="goods__price">70 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="13">
+            </div>
+          </div>
+          <div class="goods__item product-item wow fadeInUp" data-id="14" data-wow-offset="200">
+            <div class="goods__bg">
+              <picture>
+                <source srcset="dist/img/goods/14.webp" type="image/webp">
+                <img src="dist/img/goods/14.jpg" alt="Дункан чука" class="goods__img" width="290" height="193" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="goods__name">Дункан чука</h3>
+            <p class="goods__struct">нори, рис, чука салат</p>
+            <div class="goods__buy">
+              <p class="goods__price">35 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="14">
+            </div>
+          </div>
+        </div>
+        <h2 class="title2 goods__title2" id="pizza">Пицца</h2>
+        <div class="goods__items">
+          <div class="goods__item product-item wow fadeInUp" data-id="15" data-wow-offset="200">
+            <div class="goods__bg">
+              <picture>
+                <source srcset="dist/img/goods/15.webp" type="image/webp">
+                <img src="dist/img/goods/15.jpg" alt="Пицца Пепперони" class="goods__img" width="290" height="193" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="goods__name">Пицца Пепперони</h3>
+            <p class="goods__struct">сыр моцарелла, соус, салями пепперони, томаты черри, чеснок, острый перец</p>
+            <div class="goods__buy">
+              <p class="goods__price">380 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="15">
+            </div>
+          </div>
+          <div class="goods__item product-item wow fadeInUp" data-id="16" data-wow-offset="200">
+            <div class="goods__bg">
+              <picture>
+                <source srcset="dist/img/goods/16.webp" type="image/webp">
+                <img src="dist/img/goods/16.jpg" alt="Пицца Карбонара" class="goods__img" width="290" height="290" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="goods__name">Пицца Карбонара</h3>
+            <p class="goods__struct">Соус томатный, сыр моцарелла, бекон, ветчина, колбаски баварские, сыр пармезан,
+              яйцо куриное</p>
+            <div class="goods__buy">
+              <p class="goods__price">370 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="16">
+            </div>
+          </div>
+          <div class="goods__item product-item wow fadeInUp" data-id="17" data-wow-offset="200">
+            <div class="goods__bg">
+              <picture>
+                <source srcset="dist/img/goods/17.webp" type="image/webp">
+                <img src="dist/img/goods/17.jpg" alt="Пицца Маргарита" class="goods__img" width="290" height="193" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="goods__name">Пицца Маргарита</h3>
+            <p class="goods__struct">сыр моцарелла, соус, базилик</p>
+            <div class="goods__buy">
+              <p class="goods__price">240 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="17">
+            </div>
+          </div>
+          <div class="goods__item product-item wow fadeInUp" data-id="18" data-wow-offset="200">
+            <div class="goods__bg">
+              <picture>
+                <source srcset="dist/img/goods/18.webp" type="image/webp">
+                <img src="dist/img/goods/18.jpg" alt="Пицца Цезарь" class="goods__img" width="290" height="193" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="goods__name">Пицца Цезарь</h3>
+            <p class="goods__struct">сыр моцарелла, соус, куриное филе, томаты черри, капуста пекинская,соус цезарь,сыр
+              пармезан.</p>
+            <div class="goods__buy">
+              <p class="goods__price">390 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="18">
+            </div>
+          </div>
+        </div>
+        <h2 class="title2 goods__title2" id="pasta">Лапша</h2>
+        <div class="goods__items">
+          <div class="goods__item product-item wow fadeInUp" data-id="19" data-wow-offset="200">
+            <div class="goods__bg">
+              <picture>
+                <source srcset="dist/img/goods/19.webp" type="image/webp">
+                <img src="dist/img/goods/19.jpg" alt="Бобовая лапша" class="goods__img" width="290" height="193" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="goods__name">Бобовая лапша</h3>
+            <p class="goods__struct">Лапша бобовая, овощной микс, морепродукты, тигровая креветка, терияки соус,
+              фирменный соус </p>
+            <div class="goods__buy">
+              <p class="goods__price">240 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="19">
+            </div>
+          </div>
+          <div class="goods__item product-item wow fadeInUp" data-id="20" data-wow-offset="200">
+            <div class="goods__bg">
+              <picture>
+                <source srcset="dist/img/goods/20.webp" type="image/webp">
+                <img src="dist/img/goods/20.jpg" alt="Лапша Карбонара" class="goods__img" width="290" height="193" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="goods__name">Лапша Карбонара</h3>
+            <p class="goods__struct">Лапша удон, сливочно-чесночный соус, бекон, яичный желток, сыр пармезан</p>
+            <div class="goods__buy">
+              <p class="goods__price">240 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="20">
+            </div>
+          </div>
+          <div class="goods__item product-item wow fadeInUp" data-id="21" data-wow-offset="200">
+            <div class="goods__bg">
+              <picture>
+                <source srcset="dist/img/goods/21.webp" type="image/webp">
+                <img src="dist/img/goods/21.jpg" alt="Набор Овощной" class="goods__img" width="290" height="193" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="goods__name">Набор Овощной</h3>
+            <p class="goods__struct">Лапша фунчоза, овощи</p>
+            <div class="goods__buy">
+              <p class="goods__price">120 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="21">
+            </div>
+          </div>
+          <div class="goods__item product-item wow fadeInUp" data-id="22" data-wow-offset="200">
+            <div class="goods__bg">
+              <picture>
+                <source srcset="dist/img/goods/22.webp" type="image/webp">
+                <img src="dist/img/goods/22.jpg" alt="Набор яичный" class="goods__img" width="290" height="193" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="goods__name">Набор яичный</h3>
+            <p class="goods__struct">Лапша яичная, курица, сливочно-чесночный соус</p>
+            <div class="goods__buy">
+              <p class="goods__price">220 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="22">
+            </div>
+          </div>
+        </div>
+        <h2 class="title2 goods__title2" id="salad">Салаты</h2>
+        <div class="goods__items">
+          <div class="goods__item product-item wow fadeInUp" data-id="23" data-wow-offset="200">
+            <div class="goods__bg">
+              <picture>
+                <source srcset="dist/img/goods/23.webp" type="image/webp">
+                <img src="dist/img/goods/23.jpg" alt="Креветочный с авокадо" class="goods__img" width="290" height="185" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="goods__name">Креветочный с авокадо</h3>
+            <p class="goods__struct">коктейльные креветки, помидоры, огурцы, авокадо, тобико,японский майонез.</p>
+            <div class="goods__buy">
+              <p class="goods__price">250 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="23">
+            </div>
+          </div>
+          <div class="goods__item product-item wow fadeInUp" data-id="24" data-wow-offset="200">
+            <div class="goods__bg">
+              <picture>
+                <source srcset="dist/img/goods/24.webp" type="image/webp">
+                <img src="dist/img/goods/24.jpg" alt="Греческий" class="goods__img" width="290" height="193" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="goods__name">Греческий</h3>
+            <p class="goods__struct">капуста пекинская, помидоры, огурцы, перец болгарский, сыр греческий, маслины,
+              зелень.</p>
+            <div class="goods__buy">
+              <p class="goods__price">180 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="24">
+            </div>
+          </div>
+          <div class="goods__item product-item wow fadeInUp" data-id="25" data-wow-offset="200">
+            <div class="goods__bg">
+              <picture>
+                <source srcset="dist/img/goods/25.webp" type="image/webp">
+                <img src="dist/img/goods/25.jpg" alt="Цезарь с креветками" class="goods__img" width="290" height="193" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="goods__name">Цезарь с креветками</h3>
+            <p class="goods__struct">капуста пекинская ,соус цезарь, чесночные гренки, томаты черри, яйцо перепелиное,
+              сыр пармезан, тигровые креветки.</p>
+            <div class="goods__buy">
+              <p class="goods__price">280 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="25">
+            </div>
+          </div>
+          <div class="goods__item product-item wow fadeInUp" data-id="26" data-wow-offset="200">
+            <div class="goods__bg">
+              <picture>
+                <source srcset="dist/img/goods/26.webp" type="image/webp">
+                <img src="dist/img/goods/26.jpg" alt="Цезарь с курицей" class="goods__img" width="290" height="193" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="goods__name">Цезарь с курицей</h3>
+            <p class="goods__struct">капуста пекинская ,соус цезарь, чесночные гренки, томаты черри, яйцо перепелиное,
+              сыр пармезан, куриное филе.</p>
+            <div class="goods__buy">
+              <p class="goods__price">250 руб.</p>
+              <input type="button" class="btn_add_corsine goods__add-corsine-btn" value="В корзину" data-id="26">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__content">
+        <a href="/sushi" class="logo logo_white wow fadeInUp">
+          <picture>
+            <source srcset="dist/img/logo.webp" type="image/webp">
+              <img src="dist/img/logo.png" alt="SD" class="logo__img" width="45" height="41" loading="lazy">
+          </picture>
+          <div class="logo__inf">
+            <p class="logo__text">Sushi</p>
+            <span class="logo__description">Delivery</span>
+          </div>
+        </a>
+        <div class="footer-menu wow fadeInUp">
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item">
+              <a href="#roll" class="link footer-menu__link">Роллы</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#sushi" class="link footer-menu__link">Суши</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#pizza" class="link footer-menu__link">Пицца</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#pasta" class="link footer-menu__link">Лапша</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#salad" class="link footer-menu__link">Салаты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="messages"></div>
+  <a href="#header" class="up up_hide" title="Наверх">
+    <div class="up__arrow"></div>
+  </a>
+  <div class="preload">
+    <div class="lds-ripple"><div></div><div></div></div>
+  </div>
+  <script src="dist/js/common.js"></script>
+</body>
+</html>

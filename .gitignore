@@ -1,4 +1,2 @@
 node_modules/
-.babelrc
-gulpfile.babel.js
 package-lock.json
